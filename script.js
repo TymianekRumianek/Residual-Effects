@@ -15,11 +15,11 @@
   const now=()=>new Date().toLocaleTimeString('pl-PL',{hour12:false});
   const tick=()=>{$('#clock').textContent=now()};tick();setInterval(tick,1000);
   $('#sync-date').textContent='21.11.2026';
-  // Dekoracyjny monitor bez rzeczywistych danych pacjentów.
+  
   setInterval(()=>{$('#console-value').textContent=(77.4+Math.random()*1.2).toFixed(2)},2400);
-  // Jedyny licznik jest jawnie oznaczony jako wartość pokazowa.
+  
   $('#visitor-count').textContent='004182';
-  // Dźwięk generowany lokalnie, tylko po kliknięciu. Nic nie gra automatycznie.
+  
   let audioCtx=null, soundOn=false;
   function blip(f=460,d=.09){if(!soundOn)return; try {audioCtx??=new (window.AudioContext||window.webkitAudioContext)();const osc=audioCtx.createOscillator(),gain=audioCtx.createGain();osc.type='sine';osc.frequency.value=f;gain.gain.setValueAtTime(.015,audioCtx.currentTime);gain.gain.exponentialRampToValueAtTime(.0001,audioCtx.currentTime+d);osc.connect(gain).connect(audioCtx.destination);osc.start();osc.stop(audioCtx.currentTime+d)} catch(e){}}
   $('#sound-toggle').addEventListener('click',()=>{soundOn=!soundOn;$('#sound-toggle').textContent=soundOn?'◖ DŹWIĘK: WŁ.':'◖ DŹWIĘK: WYŁ.';$('#sound-toggle').setAttribute('aria-pressed',String(soundOn));blip(620,.13)});

@@ -1,6 +1,6 @@
-# Residual Effects — wersja 0.1
+# Residual Effects — wersja 0.2
 
-Pierwsza wersja fikcyjnej witryny instytucji badawczej do larpa. Wszystkie projekty, wpisy i opisy są **roboczymi treściami fabularnymi**, nie ustalonym kanonem.
+Druga wersja witryny Residual Effects, ze stylistyką starego internetu i w pełni diegetycznymi tekstami na stronie. Wszystkie projekty, wpisy i opisy są **roboczymi treściami fabularnymi**, nie ustalonym kanonem.
 
 ## Uruchomienie
 
@@ -39,3 +39,16 @@ Terminal jest na razie **elementem fabularnym**, bez aktywnego prawidłowego has
 ## Uwagi
 
 Wszystkie dane na monitorze, licznik odwiedzin i status modułów są demonstracyjne, a nie połączone z rzeczywistymi systemami. Strona jest responsywna, z opcją wyłączenia ruchu dla systemowych ustawień ograniczania animacji. Zewnętrzne czcionki korzystają z Google Fonts; bez sieci strona korzysta z zamienników.
+
+## Zmiany w wersji 0.2
+
+- Ciemniejsza, celowo nierówna estetyka starego internetu: ramki 3D, linki, gęste panele, pasy i elementy o różnych stylach.
+- Księga odwiedzin, dodatkowy biuletyn boczny i ozdobny pierścień odsyłaczy.
+- Formularz używa pól „Imię i nazwisko” oraz „Adres do korespondencji”.
+- Usunięto z widocznej strony teksty ujawniające konwencję gry oraz określenia „wartość pokazowa”.
+- Licznik odwiedzin i monitor nie pobierają realnych odczytów: obecnie są elementami oprawy graficznej. Zmieniaj ich wskazania świadomie, żeby nie sugerować nieistniejących pomiarów.
+- Księga odwiedzin ma na razie wpisy statyczne; formularz wysyła dane dopiero po skonfigurowaniu Formspree.
+
+### Ważne dla organizatorów
+
+W publicznym formularzu nie zbieraj wrażliwych danych rzeczywistych osób. Jeśli uczestnicy mogą wpisać realne dane, przekaż poza fabułą zwięzłą informację, kto i gdzie je otrzymuje, oraz jak długo są przechowywane.
